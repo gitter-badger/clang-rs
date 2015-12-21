@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `TypeKind` enum in crate `clang`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, TypeKind">
+
+    <title>clang::TypeKind - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>clang</a></p><script>window.sidebarCurrent = {name: 'TypeKind', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>clang</a>::<wbr><a class='enum' href=''>TypeKind</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-6543' class='srclink' href='../src/clang/lib.rs.html#888-983' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum TypeKind {
+    Unexposed,
+    Void,
+    Bool,
+    CharS,
+    CharU,
+    SChar,
+    UChar,
+    WChar,
+    Char16,
+    Char32,
+    Short,
+    UShort,
+    Int,
+    UInt,
+    Long,
+    ULong,
+    LongLong,
+    ULongLong,
+    Int128,
+    UInt128,
+    Float,
+    Double,
+    LongDouble,
+    Nullptr,
+    Complex,
+    Dependent,
+    Overload,
+    ObjCId,
+    ObjCClass,
+    ObjCSel,
+    ObjCInterface,
+    ObjCObjectPointer,
+    Pointer,
+    BlockPointer,
+    MemberPointer,
+    LValueReference,
+    RValueReference,
+    Enum,
+    Record,
+    Typedef,
+    FunctionPrototype,
+    FunctionNoPrototype,
+    ConstantArray,
+    DependentSizedArray,
+    IncompleteArray,
+    VariableArray,
+    Vector,
+}</pre><div class='docblock'><p>Indicates the categorization of a type.</p>
+</div><h2 class='variants'>Variants</h2>
+<table><tr><td id='variant.Unexposed'><code>Unexposed</code></td><td><div class='docblock'><p>A type whose specific kind is not exposed via this interface.</p>
+</div></td></tr><tr><td id='variant.Void'><code>Void</code></td><td><div class='docblock'><p><code>void</code></p>
+</div></td></tr><tr><td id='variant.Bool'><code>Bool</code></td><td><div class='docblock'><p><code>bool</code> (C++) or <code>_Bool</code> (C99)</p>
+</div></td></tr><tr><td id='variant.CharS'><code>CharS</code></td><td><div class='docblock'><p>The <code>char</code> type when it is signed by default.</p>
+</div></td></tr><tr><td id='variant.CharU'><code>CharU</code></td><td><div class='docblock'><p>The <code>char</code> type when it is unsigned by default.</p>
+</div></td></tr><tr><td id='variant.SChar'><code>SChar</code></td><td><div class='docblock'><p><code>signed char</code></p>
+</div></td></tr><tr><td id='variant.UChar'><code>UChar</code></td><td><div class='docblock'><p><code>unsigned char</code></p>
+</div></td></tr><tr><td id='variant.WChar'><code>WChar</code></td><td><div class='docblock'><p><code>wchar_t</code></p>
+</div></td></tr><tr><td id='variant.Char16'><code>Char16</code></td><td><div class='docblock'><p><code>char16_t</code></p>
+</div></td></tr><tr><td id='variant.Char32'><code>Char32</code></td><td><div class='docblock'><p><code>char32_t</code></p>
+</div></td></tr><tr><td id='variant.Short'><code>Short</code></td><td><div class='docblock'><p><code>short</code></p>
+</div></td></tr><tr><td id='variant.UShort'><code>UShort</code></td><td><div class='docblock'><p><code>unsigned short</code></p>
+</div></td></tr><tr><td id='variant.Int'><code>Int</code></td><td><div class='docblock'><p><code>int</code></p>
+</div></td></tr><tr><td id='variant.UInt'><code>UInt</code></td><td><div class='docblock'><p><code>unsigned int</code></p>
+</div></td></tr><tr><td id='variant.Long'><code>Long</code></td><td><div class='docblock'><p><code>long</code></p>
+</div></td></tr><tr><td id='variant.ULong'><code>ULong</code></td><td><div class='docblock'><p><code>unsigned long</code></p>
+</div></td></tr><tr><td id='variant.LongLong'><code>LongLong</code></td><td><div class='docblock'><p><code>long long</code></p>
+</div></td></tr><tr><td id='variant.ULongLong'><code>ULongLong</code></td><td><div class='docblock'><p><code>unsigned long long</code></p>
+</div></td></tr><tr><td id='variant.Int128'><code>Int128</code></td><td><div class='docblock'><p><code>__int128_t</code></p>
+</div></td></tr><tr><td id='variant.UInt128'><code>UInt128</code></td><td><div class='docblock'><p><code>__uint128_t</code></p>
+</div></td></tr><tr><td id='variant.Float'><code>Float</code></td><td><div class='docblock'><p><code>float</code></p>
+</div></td></tr><tr><td id='variant.Double'><code>Double</code></td><td><div class='docblock'><p><code>double</code></p>
+</div></td></tr><tr><td id='variant.LongDouble'><code>LongDouble</code></td><td><div class='docblock'><p><code>long double</code></p>
+</div></td></tr><tr><td id='variant.Nullptr'><code>Nullptr</code></td><td><div class='docblock'><p><code>nullptr_t</code> (C++11)</p>
+</div></td></tr><tr><td id='variant.Complex'><code>Complex</code></td><td><div class='docblock'><p>A C99 complex type (e.g., <code>_Complex float</code>).</p>
+</div></td></tr><tr><td id='variant.Dependent'><code>Dependent</code></td><td><div class='docblock'><p>An unknown dependent type.</p>
+</div></td></tr><tr><td id='variant.Overload'><code>Overload</code></td><td><div class='docblock'><p>The type of an unresolved overload set.</p>
+</div></td></tr><tr><td id='variant.ObjCId'><code>ObjCId</code></td><td><div class='docblock'><p><code>id</code> (Objective-C)</p>
+</div></td></tr><tr><td id='variant.ObjCClass'><code>ObjCClass</code></td><td><div class='docblock'><p><code>Class</code> (Objective-C)</p>
+</div></td></tr><tr><td id='variant.ObjCSel'><code>ObjCSel</code></td><td><div class='docblock'><p><code>SEL</code> (Objective-C)</p>
+</div></td></tr><tr><td id='variant.ObjCInterface'><code>ObjCInterface</code></td><td><div class='docblock'><p>An Objective-C interface type.</p>
+</div></td></tr><tr><td id='variant.ObjCObjectPointer'><code>ObjCObjectPointer</code></td><td><div class='docblock'><p>An Objective-C pointer to object type.</p>
+</div></td></tr><tr><td id='variant.Pointer'><code>Pointer</code></td><td><div class='docblock'><p>A pointer type.</p>
+</div></td></tr><tr><td id='variant.BlockPointer'><code>BlockPointer</code></td><td><div class='docblock'><p>A block pointer type (e.g., <code>void (^)(int)</code>).</p>
+</div></td></tr><tr><td id='variant.MemberPointer'><code>MemberPointer</code></td><td><div class='docblock'><p>A pointer to a record member type.</p>
+</div></td></tr><tr><td id='variant.LValueReference'><code>LValueReference</code></td><td><div class='docblock'><p>An l-value reference (e.g. <code>int&amp;</code>).</p>
+</div></td></tr><tr><td id='variant.RValueReference'><code>RValueReference</code></td><td><div class='docblock'><p>An r-value reference (e.g. <code>int&amp;&amp;</code>).</p>
+</div></td></tr><tr><td id='variant.Enum'><code>Enum</code></td><td><div class='docblock'><p>An enum type.</p>
+</div></td></tr><tr><td id='variant.Record'><code>Record</code></td><td><div class='docblock'><p>A record type such as a struct or a class.</p>
+</div></td></tr><tr><td id='variant.Typedef'><code>Typedef</code></td><td><div class='docblock'><p>A typedef.</p>
+</div></td></tr><tr><td id='variant.FunctionPrototype'><code>FunctionPrototype</code></td><td><div class='docblock'><p>A function prototype with parameter type information (e.g., <code>void foo(int)</code>).</p>
+</div></td></tr><tr><td id='variant.FunctionNoPrototype'><code>FunctionNoPrototype</code></td><td><div class='docblock'><p>A function prototype without parameter type information (e.g., <code>void foo()</code>).</p>
+</div></td></tr><tr><td id='variant.ConstantArray'><code>ConstantArray</code></td><td><div class='docblock'><p>An array type with a specified size that is an integer constant expression.</p>
+</div></td></tr><tr><td id='variant.DependentSizedArray'><code>DependentSizedArray</code></td><td><div class='docblock'><p>An array type with a specified size that is a dependent value.</p>
+</div></td></tr><tr><td id='variant.IncompleteArray'><code>IncompleteArray</code></td><td><div class='docblock'><p>An array type without a specified size.</p>
+</div></td></tr><tr><td id='variant.VariableArray'><code>VariableArray</code></td><td><div class='docblock'><p>An array type with a specified size that is not an integer constant expression.</p>
+</div></td></tr><tr><td id='variant.Vector'><code>Vector</code></td><td><div class='docblock'><p>A GCC generic vector type.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h3><div class='impl-items'><h4 id='method.hash' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash' class='fnname'>hash</a>&lt;__H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></h4>
+<h4 id='method.hash_slice' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h3><div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../clang/enum.TypeKind.html' title='clang::TypeKind'>TypeKind</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "clang";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

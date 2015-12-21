@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `EntityKind` enum in crate `clang`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, EntityKind">
+
+    <title>clang::EntityKind - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>clang</a></p><script>window.sidebarCurrent = {name: 'EntityKind', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>clang</a>::<wbr><a class='enum' href=''>EntityKind</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-5671' class='srclink' href='../src/clang/lib.rs.html#274-635' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum EntityKind {
+    UnexposedDecl,
+    StructDecl,
+    UnionDecl,
+    ClassDecl,
+    EnumDecl,
+    FieldDecl,
+    EnumConstantDecl,
+    FunctionDecl,
+    VarDecl,
+    ParmDecl,
+    ObjCInterfaceDecl,
+    ObjCCategoryDecl,
+    ObjCProtocolDecl,
+    ObjCPropertyDecl,
+    ObjCIvarDecl,
+    ObjCInstanceMethodDecl,
+    ObjCClassMethodDecl,
+    ObjCImplementationDecl,
+    ObjCCategoryImplDecl,
+    TypedefDecl,
+    Method,
+    Namespace,
+    LinkageSpec,
+    Constructor,
+    Destructor,
+    ConversionFunction,
+    TemplateTypeParameter,
+    NonTypeTemplateParameter,
+    TemplateTemplateParameter,
+    FunctionTemplate,
+    ClassTemplate,
+    ClassTemplatePartialSpecialization,
+    NamespaceAlias,
+    UsingDirective,
+    UsingDeclaration,
+    TypeAliasDecl,
+    ObjCSynthesizeDecl,
+    ObjCDynamicDecl,
+    AccessSpecifier,
+    ObjCSuperClassRef,
+    ObjCProtocolRef,
+    ObjCClassRef,
+    TypeRef,
+    BaseSpecifier,
+    TemplateRef,
+    NamespaceRef,
+    MemberRef,
+    LabelRef,
+    OverloadedDeclRef,
+    VariableRef,
+    UnexposedExpr,
+    DeclRefExpr,
+    MemberRefExpr,
+    CallExpr,
+    ObjCMessageExpr,
+    BlockExpr,
+    IntegerLiteral,
+    FloatingLiteral,
+    ImaginaryLiteral,
+    StringLiteral,
+    CharacterLiteral,
+    ParenExpr,
+    UnaryOperator,
+    ArraySubscriptExpr,
+    BinaryOperator,
+    CompoundAssignOperator,
+    ConditionalOperator,
+    CStyleCastExpr,
+    CompoundLiteralExpr,
+    InitListExpr,
+    AddrLabelExpr,
+    StmtExpr,
+    GenericSelectionExpr,
+    GNUNullExpr,
+    StaticCastExpr,
+    DynamicCastExpr,
+    ReinterpretCastExpr,
+    ConstCastExpr,
+    FunctionalCastExpr,
+    TypeidExpr,
+    BoolLiteralExpr,
+    NullPtrLiteralExpr,
+    ThisExpr,
+    ThrowExpr,
+    NewExpr,
+    DeleteExpr,
+    UnaryExpr,
+    ObjCStringLiteral,
+    ObjCEncodeExpr,
+    ObjCSelectorExpr,
+    ObjCProtocolExpr,
+    ObjCBridgedCastExpr,
+    PackExpansionExpr,
+    SizeOfPackExpr,
+    LambdaExpr,
+    ObjCBoolLiteralExpr,
+    ObjCSelfExpr,
+    UnexposedStmt,
+    LabelStmt,
+    CompoundStmt,
+    CaseStmt,
+    DefaultStmt,
+    IfStmt,
+    SwitchStmt,
+    WhileStmt,
+    DoStmt,
+    ForStmt,
+    GotoStmt,
+    IndirectGotoStmt,
+    ContinueStmt,
+    BreakStmt,
+    ReturnStmt,
+    AsmStmt,
+    ObjCAtTryStmt,
+    ObjCAtCatchStmt,
+    ObjCAtFinallyStmt,
+    ObjCAtThrowStmt,
+    ObjCAtSynchronizedStmt,
+    ObjCAutoreleasePoolStmt,
+    ObjCForCollectionStmt,
+    CatchStmt,
+    TryStmt,
+    ForRangeStmt,
+    SehTryStmt,
+    SehExceptStmt,
+    SehFinallyStmt,
+    SehLeaveStmt,
+    MsAsmStmt,
+    NullStmt,
+    DeclStmt,
+    OmpParallelDirective,
+    OmpSimdDirective,
+    OmpForDirective,
+    OmpSectionsDirective,
+    OmpSectionDirective,
+    OmpSingleDirective,
+    OmpParallelForDirective,
+    OmpParallelSectionsDirective,
+    OmpTaskDirective,
+    OmpMasterDirective,
+    OmpCriticalDirective,
+    OmpTaskyieldDirective,
+    OmpBarrierDirective,
+    OmpTaskwaitDirective,
+    OmpFlushDirective,
+    OmpOrderedDirective,
+    OmpAtomicDirective,
+    OmpForSimdDirective,
+    OmpParallelForSimdDirective,
+    OmpTargetDirective,
+    OmpTeamsDirective,
+    OmpTaskgroupDirective,
+    OmpCancellationPointDirective,
+    OmpCancelDirective,
+    TranslationUnit,
+    UnexposedAttr,
+    IbActionAttr,
+    IbOutletAttr,
+    IbOutletCollectionAttr,
+    FinalAttr,
+    OverrideAttr,
+    AnnotateAttr,
+    AsmLabelAttr,
+    PackedAttr,
+    PureAttr,
+    ConstAttr,
+    NoDuplicateAttr,
+    CudaConstantAttr,
+    CudaDeviceAttr,
+    CudaGlobalAttr,
+    CudaHostAttr,
+    CudaSharedAttr,
+    PreprocessingDirective,
+    MacroDefinition,
+    MacroExpansion,
+    InclusionDirective,
+    ModuleImportDecl,
+    OverloadCandidate,
+}</pre><div class='docblock'><p>Indicates the categorization of an AST entity.</p>
+</div><h2 class='variants'>Variants</h2>
+<table><tr><td id='variant.UnexposedDecl'><code>UnexposedDecl</code></td><td><div class='docblock'><p>A declaration whose specific type is not exposed via this interface.</p>
+</div></td></tr><tr><td id='variant.StructDecl'><code>StructDecl</code></td><td><div class='docblock'><p>A C or C++ struct.</p>
+</div></td></tr><tr><td id='variant.UnionDecl'><code>UnionDecl</code></td><td><div class='docblock'><p>A C or C++ union.</p>
+</div></td></tr><tr><td id='variant.ClassDecl'><code>ClassDecl</code></td><td><div class='docblock'><p>A C++ class.</p>
+</div></td></tr><tr><td id='variant.EnumDecl'><code>EnumDecl</code></td><td><div class='docblock'><p>An enum.</p>
+</div></td></tr><tr><td id='variant.FieldDecl'><code>FieldDecl</code></td><td><div class='docblock'><p>A C field or C++ non-static data member in a struct, union, or class.</p>
+</div></td></tr><tr><td id='variant.EnumConstantDecl'><code>EnumConstantDecl</code></td><td><div class='docblock'><p>An enum constant.</p>
+</div></td></tr><tr><td id='variant.FunctionDecl'><code>FunctionDecl</code></td><td><div class='docblock'><p>A function.</p>
+</div></td></tr><tr><td id='variant.VarDecl'><code>VarDecl</code></td><td><div class='docblock'><p>A variable.</p>
+</div></td></tr><tr><td id='variant.ParmDecl'><code>ParmDecl</code></td><td><div class='docblock'><p>A parameter.</p>
+</div></td></tr><tr><td id='variant.ObjCInterfaceDecl'><code>ObjCInterfaceDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@interface</code>.</p>
+</div></td></tr><tr><td id='variant.ObjCCategoryDecl'><code>ObjCCategoryDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@interface</code> for a category.</p>
+</div></td></tr><tr><td id='variant.ObjCProtocolDecl'><code>ObjCProtocolDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@protocol</code> declaration.</p>
+</div></td></tr><tr><td id='variant.ObjCPropertyDecl'><code>ObjCPropertyDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@property</code> declaration.</p>
+</div></td></tr><tr><td id='variant.ObjCIvarDecl'><code>ObjCIvarDecl</code></td><td><div class='docblock'><p>An Objective-C instance variable.</p>
+</div></td></tr><tr><td id='variant.ObjCInstanceMethodDecl'><code>ObjCInstanceMethodDecl</code></td><td><div class='docblock'><p>An Objective-C instance method.</p>
+</div></td></tr><tr><td id='variant.ObjCClassMethodDecl'><code>ObjCClassMethodDecl</code></td><td><div class='docblock'><p>An Objective-C class method.</p>
+</div></td></tr><tr><td id='variant.ObjCImplementationDecl'><code>ObjCImplementationDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@implementation</code>.</p>
+</div></td></tr><tr><td id='variant.ObjCCategoryImplDecl'><code>ObjCCategoryImplDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@implementation</code> for a category.</p>
+</div></td></tr><tr><td id='variant.TypedefDecl'><code>TypedefDecl</code></td><td><div class='docblock'><p>A typedef.</p>
+</div></td></tr><tr><td id='variant.Method'><code>Method</code></td><td><div class='docblock'><p>A C++ method.</p>
+</div></td></tr><tr><td id='variant.Namespace'><code>Namespace</code></td><td><div class='docblock'><p>A C++ namespace.</p>
+</div></td></tr><tr><td id='variant.LinkageSpec'><code>LinkageSpec</code></td><td><div class='docblock'><p>A linkage specification (e.g., <code>extern &quot;C&quot;</code>).</p>
+</div></td></tr><tr><td id='variant.Constructor'><code>Constructor</code></td><td><div class='docblock'><p>A C++ constructor.</p>
+</div></td></tr><tr><td id='variant.Destructor'><code>Destructor</code></td><td><div class='docblock'><p>A C++ destructor.</p>
+</div></td></tr><tr><td id='variant.ConversionFunction'><code>ConversionFunction</code></td><td><div class='docblock'><p>A C++ conversion function.</p>
+</div></td></tr><tr><td id='variant.TemplateTypeParameter'><code>TemplateTypeParameter</code></td><td><div class='docblock'><p>A C++ template type parameter.</p>
+</div></td></tr><tr><td id='variant.NonTypeTemplateParameter'><code>NonTypeTemplateParameter</code></td><td><div class='docblock'><p>A C++ template non-type parameter.</p>
+</div></td></tr><tr><td id='variant.TemplateTemplateParameter'><code>TemplateTemplateParameter</code></td><td><div class='docblock'><p>A C++ template template parameter.</p>
+</div></td></tr><tr><td id='variant.FunctionTemplate'><code>FunctionTemplate</code></td><td><div class='docblock'><p>A C++ function template.</p>
+</div></td></tr><tr><td id='variant.ClassTemplate'><code>ClassTemplate</code></td><td><div class='docblock'><p>A C++ class template.</p>
+</div></td></tr><tr><td id='variant.ClassTemplatePartialSpecialization'><code>ClassTemplatePartialSpecialization</code></td><td><div class='docblock'><p>A C++ class template partial specialization.</p>
+</div></td></tr><tr><td id='variant.NamespaceAlias'><code>NamespaceAlias</code></td><td><div class='docblock'><p>A C++ namespace alias declaration.</p>
+</div></td></tr><tr><td id='variant.UsingDirective'><code>UsingDirective</code></td><td><div class='docblock'><p>A C++ using directive.</p>
+</div></td></tr><tr><td id='variant.UsingDeclaration'><code>UsingDeclaration</code></td><td><div class='docblock'><p>A C++ using declaration.</p>
+</div></td></tr><tr><td id='variant.TypeAliasDecl'><code>TypeAliasDecl</code></td><td><div class='docblock'><p>A C++ type alias declaration.</p>
+</div></td></tr><tr><td id='variant.ObjCSynthesizeDecl'><code>ObjCSynthesizeDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@synthesize</code> definition.</p>
+</div></td></tr><tr><td id='variant.ObjCDynamicDecl'><code>ObjCDynamicDecl</code></td><td><div class='docblock'><p>An Objective-C <code>@dynamic</code> definition.</p>
+</div></td></tr><tr><td id='variant.AccessSpecifier'><code>AccessSpecifier</code></td><td><div class='docblock'><p>An access specifier.</p>
+</div></td></tr><tr><td id='variant.ObjCSuperClassRef'><code>ObjCSuperClassRef</code></td><td><div class='docblock'><p>A reference to a super class in Objective-C.</p>
+</div></td></tr><tr><td id='variant.ObjCProtocolRef'><code>ObjCProtocolRef</code></td><td><div class='docblock'><p>A reference to a protocol in Objective-C.</p>
+</div></td></tr><tr><td id='variant.ObjCClassRef'><code>ObjCClassRef</code></td><td><div class='docblock'><p>A reference to a class in Objective-C.</p>
+</div></td></tr><tr><td id='variant.TypeRef'><code>TypeRef</code></td><td><div class='docblock'><p>A reference to a type declaration.</p>
+</div></td></tr><tr><td id='variant.BaseSpecifier'><code>BaseSpecifier</code></td><td><div class='docblock'><p>A base class specifier.</p>
+</div></td></tr><tr><td id='variant.TemplateRef'><code>TemplateRef</code></td><td><div class='docblock'><p>A reference to a class template, function template, template template parameter, or class
+template partial specialization.</p>
+</div></td></tr><tr><td id='variant.NamespaceRef'><code>NamespaceRef</code></td><td><div class='docblock'><p>A reference to a namespace or namespace alias.</p>
+</div></td></tr><tr><td id='variant.MemberRef'><code>MemberRef</code></td><td><div class='docblock'><p>A reference to a member of a struct, union, or class that occurs in some non-expression
+context.</p>
+</div></td></tr><tr><td id='variant.LabelRef'><code>LabelRef</code></td><td><div class='docblock'><p>A reference to a labeled statement.</p>
+</div></td></tr><tr><td id='variant.OverloadedDeclRef'><code>OverloadedDeclRef</code></td><td><div class='docblock'><p>A reference to a set of overloaded functions or function templates that has not yet been
+resolved to a specific function or function template.</p>
+</div></td></tr><tr><td id='variant.VariableRef'><code>VariableRef</code></td><td><div class='docblock'><p>A reference to a variable that occurs in some non-expression context.</p>
+</div></td></tr><tr><td id='variant.UnexposedExpr'><code>UnexposedExpr</code></td><td><div class='docblock'><p>An expression whose specific kind is not exposed via this interface.</p>
+</div></td></tr><tr><td id='variant.DeclRefExpr'><code>DeclRefExpr</code></td><td><div class='docblock'><p>An expression that refers to some value declaration, such as a function or enumerator.</p>
+</div></td></tr><tr><td id='variant.MemberRefExpr'><code>MemberRefExpr</code></td><td><div class='docblock'><p>An expression that refers to the member of a struct, union, or class.</p>
+</div></td></tr><tr><td id='variant.CallExpr'><code>CallExpr</code></td><td><div class='docblock'><p>An expression that calls a function.</p>
+</div></td></tr><tr><td id='variant.ObjCMessageExpr'><code>ObjCMessageExpr</code></td><td><div class='docblock'><p>An expression that sends a message to an Objective-C object or class.</p>
+</div></td></tr><tr><td id='variant.BlockExpr'><code>BlockExpr</code></td><td><div class='docblock'><p>An expression that represents a block literal.</p>
+</div></td></tr><tr><td id='variant.IntegerLiteral'><code>IntegerLiteral</code></td><td><div class='docblock'><p>An integer literal.</p>
+</div></td></tr><tr><td id='variant.FloatingLiteral'><code>FloatingLiteral</code></td><td><div class='docblock'><p>A floating point number literal.</p>
+</div></td></tr><tr><td id='variant.ImaginaryLiteral'><code>ImaginaryLiteral</code></td><td><div class='docblock'><p>An imaginary number literal.</p>
+</div></td></tr><tr><td id='variant.StringLiteral'><code>StringLiteral</code></td><td><div class='docblock'><p>A string literal.</p>
+</div></td></tr><tr><td id='variant.CharacterLiteral'><code>CharacterLiteral</code></td><td><div class='docblock'><p>A character literal.</p>
+</div></td></tr><tr><td id='variant.ParenExpr'><code>ParenExpr</code></td><td><div class='docblock'><p>A parenthesized expression.</p>
+</div></td></tr><tr><td id='variant.UnaryOperator'><code>UnaryOperator</code></td><td><div class='docblock'><p>Any unary expression other than <code>sizeof</code> and <code>alignof</code>.</p>
+</div></td></tr><tr><td id='variant.ArraySubscriptExpr'><code>ArraySubscriptExpr</code></td><td><div class='docblock'><p>An array subscript expression (<code>[C99 6.5.2.1]</code>).</p>
+</div></td></tr><tr><td id='variant.BinaryOperator'><code>BinaryOperator</code></td><td><div class='docblock'><p>A built-in binary expression (e.g., <code>x + y</code>).</p>
+</div></td></tr><tr><td id='variant.CompoundAssignOperator'><code>CompoundAssignOperator</code></td><td><div class='docblock'><p>A compound assignment expression (e.g., <code>x += y</code>).</p>
+</div></td></tr><tr><td id='variant.ConditionalOperator'><code>ConditionalOperator</code></td><td><div class='docblock'><p>A ternary expression.</p>
+</div></td></tr><tr><td id='variant.CStyleCastExpr'><code>CStyleCastExpr</code></td><td><div class='docblock'><p>An explicit cast in C or a C-style cast in C++.</p>
+</div></td></tr><tr><td id='variant.CompoundLiteralExpr'><code>CompoundLiteralExpr</code></td><td><div class='docblock'><p>A compound literal expression (<code>[C99 6.5.2.5]</code>).</p>
+</div></td></tr><tr><td id='variant.InitListExpr'><code>InitListExpr</code></td><td><div class='docblock'><p>A C or C++ initializer list.</p>
+</div></td></tr><tr><td id='variant.AddrLabelExpr'><code>AddrLabelExpr</code></td><td><div class='docblock'><p>A GNU address of label expression.</p>
+</div></td></tr><tr><td id='variant.StmtExpr'><code>StmtExpr</code></td><td><div class='docblock'><p>A GNU statement expression.</p>
+</div></td></tr><tr><td id='variant.GenericSelectionExpr'><code>GenericSelectionExpr</code></td><td><div class='docblock'><p>A C11 generic selection expression.</p>
+</div></td></tr><tr><td id='variant.GNUNullExpr'><code>GNUNullExpr</code></td><td><div class='docblock'><p>A GNU <code>__null</code> expression.</p>
+</div></td></tr><tr><td id='variant.StaticCastExpr'><code>StaticCastExpr</code></td><td><div class='docblock'><p>A C++ <code>static_cast&lt;&gt;</code> expression.</p>
+</div></td></tr><tr><td id='variant.DynamicCastExpr'><code>DynamicCastExpr</code></td><td><div class='docblock'><p>A C++ <code>dynamic_cast&lt;&gt;</code> expression.</p>
+</div></td></tr><tr><td id='variant.ReinterpretCastExpr'><code>ReinterpretCastExpr</code></td><td><div class='docblock'><p>A C++ <code>reinterpret_cast&lt;&gt;</code> expression.</p>
+</div></td></tr><tr><td id='variant.ConstCastExpr'><code>ConstCastExpr</code></td><td><div class='docblock'><p>A C++ <code>const_cast&lt;&gt;</code> expression.</p>
+</div></td></tr><tr><td id='variant.FunctionalCastExpr'><code>FunctionalCastExpr</code></td><td><div class='docblock'><p>A C++ cast that uses &quot;function&quot; notation (e.g., <code>int(0.5)</code>).</p>
+</div></td></tr><tr><td id='variant.TypeidExpr'><code>TypeidExpr</code></td><td><div class='docblock'><p>A C++ <code>typeid</code> expression.</p>
+</div></td></tr><tr><td id='variant.BoolLiteralExpr'><code>BoolLiteralExpr</code></td><td><div class='docblock'><p>A C++ boolean literal.</p>
+</div></td></tr><tr><td id='variant.NullPtrLiteralExpr'><code>NullPtrLiteralExpr</code></td><td><div class='docblock'><p>A C++ <code>nullptr</code> exrepssion.</p>
+</div></td></tr><tr><td id='variant.ThisExpr'><code>ThisExpr</code></td><td><div class='docblock'><p>A C++ <code>this</code> expression.</p>
+</div></td></tr><tr><td id='variant.ThrowExpr'><code>ThrowExpr</code></td><td><div class='docblock'><p>A C++ <code>throw</code> expression.</p>
+</div></td></tr><tr><td id='variant.NewExpr'><code>NewExpr</code></td><td><div class='docblock'><p>A C++ <code>new</code> expression.</p>
+</div></td></tr><tr><td id='variant.DeleteExpr'><code>DeleteExpr</code></td><td><div class='docblock'><p>A C++ <code>delete</code> expression.</p>
+</div></td></tr><tr><td id='variant.UnaryExpr'><code>UnaryExpr</code></td><td><div class='docblock'><p>A unary expression.</p>
+</div></td></tr><tr><td id='variant.ObjCStringLiteral'><code>ObjCStringLiteral</code></td><td><div class='docblock'><p>An Objective-C string literal.</p>
+</div></td></tr><tr><td id='variant.ObjCEncodeExpr'><code>ObjCEncodeExpr</code></td><td><div class='docblock'><p>An Objective-C <code>@encode</code> expression.</p>
+</div></td></tr><tr><td id='variant.ObjCSelectorExpr'><code>ObjCSelectorExpr</code></td><td><div class='docblock'><p>An Objective-C <code>@selector</code> expression.</p>
+</div></td></tr><tr><td id='variant.ObjCProtocolExpr'><code>ObjCProtocolExpr</code></td><td><div class='docblock'><p>An Objective-C <code>@protocol</code> expression.</p>
+</div></td></tr><tr><td id='variant.ObjCBridgedCastExpr'><code>ObjCBridgedCastExpr</code></td><td><div class='docblock'><p>An Objective-C bridged cast expression.</p>
+</div></td></tr><tr><td id='variant.PackExpansionExpr'><code>PackExpansionExpr</code></td><td><div class='docblock'><p>A C++11 parameter pack expansion expression.</p>
+</div></td></tr><tr><td id='variant.SizeOfPackExpr'><code>SizeOfPackExpr</code></td><td><div class='docblock'><p>A C++11 <code>sizeof...</code> expression.</p>
+</div></td></tr><tr><td id='variant.LambdaExpr'><code>LambdaExpr</code></td><td><div class='docblock'><p>A C++11 lambda expression.</p>
+</div></td></tr><tr><td id='variant.ObjCBoolLiteralExpr'><code>ObjCBoolLiteralExpr</code></td><td><div class='docblock'><p>An Objective-C boolean literal.</p>
+</div></td></tr><tr><td id='variant.ObjCSelfExpr'><code>ObjCSelfExpr</code></td><td><div class='docblock'><p>An Objective-C <code>self</code> expression.</p>
+</div></td></tr><tr><td id='variant.UnexposedStmt'><code>UnexposedStmt</code></td><td><div class='docblock'><p>A statement whose specific kind is not exposed via this interface.</p>
+</div></td></tr><tr><td id='variant.LabelStmt'><code>LabelStmt</code></td><td><div class='docblock'><p>A labelled statement in a function.</p>
+</div></td></tr><tr><td id='variant.CompoundStmt'><code>CompoundStmt</code></td><td><div class='docblock'><p>A group of statements (e.g., a function body).</p>
+</div></td></tr><tr><td id='variant.CaseStmt'><code>CaseStmt</code></td><td><div class='docblock'><p>A <code>case</code> statement.</p>
+</div></td></tr><tr><td id='variant.DefaultStmt'><code>DefaultStmt</code></td><td><div class='docblock'><p>A <code>default</code> statement.</p>
+</div></td></tr><tr><td id='variant.IfStmt'><code>IfStmt</code></td><td><div class='docblock'><p>An <code>if</code> statement.</p>
+</div></td></tr><tr><td id='variant.SwitchStmt'><code>SwitchStmt</code></td><td><div class='docblock'><p>A <code>switch</code> statement.</p>
+</div></td></tr><tr><td id='variant.WhileStmt'><code>WhileStmt</code></td><td><div class='docblock'><p>A <code>while</code> statement.</p>
+</div></td></tr><tr><td id='variant.DoStmt'><code>DoStmt</code></td><td><div class='docblock'><p>A <code>do</code> statement.</p>
+</div></td></tr><tr><td id='variant.ForStmt'><code>ForStmt</code></td><td><div class='docblock'><p>A <code>for</code> statement.</p>
+</div></td></tr><tr><td id='variant.GotoStmt'><code>GotoStmt</code></td><td><div class='docblock'><p>A <code>goto</code> statement.</p>
+</div></td></tr><tr><td id='variant.IndirectGotoStmt'><code>IndirectGotoStmt</code></td><td><div class='docblock'><p>An indirect <code>goto</code> statement.</p>
+</div></td></tr><tr><td id='variant.ContinueStmt'><code>ContinueStmt</code></td><td><div class='docblock'><p>A <code>continue</code> statement.</p>
+</div></td></tr><tr><td id='variant.BreakStmt'><code>BreakStmt</code></td><td><div class='docblock'><p>A <code>break</code> statement.</p>
+</div></td></tr><tr><td id='variant.ReturnStmt'><code>ReturnStmt</code></td><td><div class='docblock'><p>A <code>return</code> statement.</p>
+</div></td></tr><tr><td id='variant.AsmStmt'><code>AsmStmt</code></td><td><div class='docblock'><p>An inline assembly statement.</p>
+</div></td></tr><tr><td id='variant.ObjCAtTryStmt'><code>ObjCAtTryStmt</code></td><td><div class='docblock'><p>An Objective-C <code>@try</code>-<code>@catch</code>-<code>@finally</code> statement.</p>
+</div></td></tr><tr><td id='variant.ObjCAtCatchStmt'><code>ObjCAtCatchStmt</code></td><td><div class='docblock'><p>An Objective-C <code>@catch</code> statement.</p>
+</div></td></tr><tr><td id='variant.ObjCAtFinallyStmt'><code>ObjCAtFinallyStmt</code></td><td><div class='docblock'><p>An Objective-C <code>@finally</code> statement.</p>
+</div></td></tr><tr><td id='variant.ObjCAtThrowStmt'><code>ObjCAtThrowStmt</code></td><td><div class='docblock'><p>An Objective-C <code>@throw</code> statement.</p>
+</div></td></tr><tr><td id='variant.ObjCAtSynchronizedStmt'><code>ObjCAtSynchronizedStmt</code></td><td><div class='docblock'><p>An Objective-C <code>@synchronized</code> statement.</p>
+</div></td></tr><tr><td id='variant.ObjCAutoreleasePoolStmt'><code>ObjCAutoreleasePoolStmt</code></td><td><div class='docblock'><p>An Objective-C autorelease pool statement.</p>
+</div></td></tr><tr><td id='variant.ObjCForCollectionStmt'><code>ObjCForCollectionStmt</code></td><td><div class='docblock'><p>An Objective-C collection statement.</p>
+</div></td></tr><tr><td id='variant.CatchStmt'><code>CatchStmt</code></td><td><div class='docblock'><p>A C++ catch statement.</p>
+</div></td></tr><tr><td id='variant.TryStmt'><code>TryStmt</code></td><td><div class='docblock'><p>A C++ try statement.</p>
+</div></td></tr><tr><td id='variant.ForRangeStmt'><code>ForRangeStmt</code></td><td><div class='docblock'><p>A C++11 range-based for statement.</p>
+</div></td></tr><tr><td id='variant.SehTryStmt'><code>SehTryStmt</code></td><td><div class='docblock'><p>A Windows Structured Exception Handling <code>__try</code> statement.</p>
+</div></td></tr><tr><td id='variant.SehExceptStmt'><code>SehExceptStmt</code></td><td><div class='docblock'><p>A Windows Structured Exception Handling <code>__except</code> statement.</p>
+</div></td></tr><tr><td id='variant.SehFinallyStmt'><code>SehFinallyStmt</code></td><td><div class='docblock'><p>A Windows Structured Exception Handling <code>__finally</code> statement.</p>
+</div></td></tr><tr><td id='variant.SehLeaveStmt'><code>SehLeaveStmt</code></td><td><div class='docblock'><p>A Windows Structured Exception Handling <code>__leave</code> statement.</p>
+</div></td></tr><tr><td id='variant.MsAsmStmt'><code>MsAsmStmt</code></td><td><div class='docblock'><p>A Microsoft inline assembly statement.</p>
+</div></td></tr><tr><td id='variant.NullStmt'><code>NullStmt</code></td><td><div class='docblock'><p>A null statement.</p>
+</div></td></tr><tr><td id='variant.DeclStmt'><code>DeclStmt</code></td><td><div class='docblock'><p>An adaptor for mixing declarations with statements and expressions.</p>
+</div></td></tr><tr><td id='variant.OmpParallelDirective'><code>OmpParallelDirective</code></td><td><div class='docblock'><p>An OpenMP parallel directive.</p>
+</div></td></tr><tr><td id='variant.OmpSimdDirective'><code>OmpSimdDirective</code></td><td><div class='docblock'><p>An OpenMP SIMD directive.</p>
+</div></td></tr><tr><td id='variant.OmpForDirective'><code>OmpForDirective</code></td><td><div class='docblock'><p>An OpenMP for directive.</p>
+</div></td></tr><tr><td id='variant.OmpSectionsDirective'><code>OmpSectionsDirective</code></td><td><div class='docblock'><p>An OpenMP sections directive.</p>
+</div></td></tr><tr><td id='variant.OmpSectionDirective'><code>OmpSectionDirective</code></td><td><div class='docblock'><p>An OpenMP section directive.</p>
+</div></td></tr><tr><td id='variant.OmpSingleDirective'><code>OmpSingleDirective</code></td><td><div class='docblock'><p>An OpenMP single directive.</p>
+</div></td></tr><tr><td id='variant.OmpParallelForDirective'><code>OmpParallelForDirective</code></td><td><div class='docblock'><p>An OpenMP parallel for directive.</p>
+</div></td></tr><tr><td id='variant.OmpParallelSectionsDirective'><code>OmpParallelSectionsDirective</code></td><td><div class='docblock'><p>An OpenMP parallel sections directive.</p>
+</div></td></tr><tr><td id='variant.OmpTaskDirective'><code>OmpTaskDirective</code></td><td><div class='docblock'><p>An OpenMP task directive.</p>
+</div></td></tr><tr><td id='variant.OmpMasterDirective'><code>OmpMasterDirective</code></td><td><div class='docblock'><p>An OpenMP master directive.</p>
+</div></td></tr><tr><td id='variant.OmpCriticalDirective'><code>OmpCriticalDirective</code></td><td><div class='docblock'><p>An OpenMP critical directive.</p>
+</div></td></tr><tr><td id='variant.OmpTaskyieldDirective'><code>OmpTaskyieldDirective</code></td><td><div class='docblock'><p>An OpenMP taskyield directive.</p>
+</div></td></tr><tr><td id='variant.OmpBarrierDirective'><code>OmpBarrierDirective</code></td><td><div class='docblock'><p>An OpenMP barrier directive.</p>
+</div></td></tr><tr><td id='variant.OmpTaskwaitDirective'><code>OmpTaskwaitDirective</code></td><td><div class='docblock'><p>An OpenMP taskwait directive.</p>
+</div></td></tr><tr><td id='variant.OmpFlushDirective'><code>OmpFlushDirective</code></td><td><div class='docblock'><p>An OpenMP flush directive.</p>
+</div></td></tr><tr><td id='variant.OmpOrderedDirective'><code>OmpOrderedDirective</code></td><td><div class='docblock'><p>An OpenMP ordered directive.</p>
+</div></td></tr><tr><td id='variant.OmpAtomicDirective'><code>OmpAtomicDirective</code></td><td><div class='docblock'><p>An OpenMP atomic directive.</p>
+</div></td></tr><tr><td id='variant.OmpForSimdDirective'><code>OmpForSimdDirective</code></td><td><div class='docblock'><p>An OpenMP for SIMD directive.</p>
+</div></td></tr><tr><td id='variant.OmpParallelForSimdDirective'><code>OmpParallelForSimdDirective</code></td><td><div class='docblock'><p>An OpenMP parallel for SIMD directive.</p>
+</div></td></tr><tr><td id='variant.OmpTargetDirective'><code>OmpTargetDirective</code></td><td><div class='docblock'><p>An OpenMP target directive.</p>
+</div></td></tr><tr><td id='variant.OmpTeamsDirective'><code>OmpTeamsDirective</code></td><td><div class='docblock'><p>An OpenMP teams directive.</p>
+</div></td></tr><tr><td id='variant.OmpTaskgroupDirective'><code>OmpTaskgroupDirective</code></td><td><div class='docblock'><p>An OpenMP taskgroup directive.</p>
+</div></td></tr><tr><td id='variant.OmpCancellationPointDirective'><code>OmpCancellationPointDirective</code></td><td><div class='docblock'><p>An OpenMP cancellation point directive.</p>
+</div></td></tr><tr><td id='variant.OmpCancelDirective'><code>OmpCancelDirective</code></td><td><div class='docblock'><p>An OpenMP cancel directive.</p>
+</div></td></tr><tr><td id='variant.TranslationUnit'><code>TranslationUnit</code></td><td><div class='docblock'><p>The top-level AST entity which acts as the root for the other entitys.</p>
+</div></td></tr><tr><td id='variant.UnexposedAttr'><code>UnexposedAttr</code></td><td><div class='docblock'><p>An attribute whose specific kind is not exposed via this interface.</p>
+</div></td></tr><tr><td id='variant.IbActionAttr'><code>IbActionAttr</code></td><td><div class='docblock'><p>An attribute applied to an Objective-C IBAction.</p>
+</div></td></tr><tr><td id='variant.IbOutletAttr'><code>IbOutletAttr</code></td><td><div class='docblock'><p>An attribute applied to an Objective-C IBOutlet.</p>
+</div></td></tr><tr><td id='variant.IbOutletCollectionAttr'><code>IbOutletCollectionAttr</code></td><td><div class='docblock'><p>An attribute applied to an Objective-C IBOutletCollection.</p>
+</div></td></tr><tr><td id='variant.FinalAttr'><code>FinalAttr</code></td><td><div class='docblock'><p>The <code>final</code> attribute.</p>
+</div></td></tr><tr><td id='variant.OverrideAttr'><code>OverrideAttr</code></td><td><div class='docblock'><p>The <code>override</code> attribute.</p>
+</div></td></tr><tr><td id='variant.AnnotateAttr'><code>AnnotateAttr</code></td><td><div class='docblock'><p>An annotation attribute.</p>
+</div></td></tr><tr><td id='variant.AsmLabelAttr'><code>AsmLabelAttr</code></td><td><div class='docblock'><p>An ASM label attribute.</p>
+</div></td></tr><tr><td id='variant.PackedAttr'><code>PackedAttr</code></td><td><div class='docblock'><p>An attribute that requests for packed records (e.g., <code>__attribute__ ((__packed__))</code>).</p>
+</div></td></tr><tr><td id='variant.PureAttr'><code>PureAttr</code></td><td><div class='docblock'><p>An attribute that asserts a function has no side effects (e.g., <code>__attribute__((pure))</code>).</p>
+</div></td></tr><tr><td id='variant.ConstAttr'><code>ConstAttr</code></td><td><div class='docblock'><p>The <code>const</code> attribute.</p>
+</div></td></tr><tr><td id='variant.NoDuplicateAttr'><code>NoDuplicateAttr</code></td><td><div class='docblock'><p>An attribute that allows calls to a function to be duplicated by the optimized
+(e.g., <code>__attribute__((noduplicate))</code>).</p>
+</div></td></tr><tr><td id='variant.CudaConstantAttr'><code>CudaConstantAttr</code></td><td><div class='docblock'><p>A CUDA constant attribute.</p>
+</div></td></tr><tr><td id='variant.CudaDeviceAttr'><code>CudaDeviceAttr</code></td><td><div class='docblock'><p>A CUDA device attribute.</p>
+</div></td></tr><tr><td id='variant.CudaGlobalAttr'><code>CudaGlobalAttr</code></td><td><div class='docblock'><p>A CUDA global attribute.</p>
+</div></td></tr><tr><td id='variant.CudaHostAttr'><code>CudaHostAttr</code></td><td><div class='docblock'><p>A CUDA host attribute.</p>
+</div></td></tr><tr><td id='variant.CudaSharedAttr'><code>CudaSharedAttr</code></td><td><div class='docblock'><p>A CUDA shared attribute.</p>
+</div></td></tr><tr><td id='variant.PreprocessingDirective'><code>PreprocessingDirective</code></td><td><div class='docblock'><p>A preprocessing directive.</p>
+</div></td></tr><tr><td id='variant.MacroDefinition'><code>MacroDefinition</code></td><td><div class='docblock'><p>A macro definition.</p>
+</div></td></tr><tr><td id='variant.MacroExpansion'><code>MacroExpansion</code></td><td><div class='docblock'><p>A macro expansion.</p>
+</div></td></tr><tr><td id='variant.InclusionDirective'><code>InclusionDirective</code></td><td><div class='docblock'><p>An inclusion directive.</p>
+</div></td></tr><tr><td id='variant.ModuleImportDecl'><code>ModuleImportDecl</code></td><td><div class='docblock'><p>A module import declaration.</p>
+</div></td></tr><tr><td id='variant.OverloadCandidate'><code>OverloadCandidate</code></td><td><div class='docblock'><p>A single overload in a set of overloads.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h3><div class='impl-items'><h4 id='method.hash' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash' class='fnname'>hash</a>&lt;__H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></h4>
+<h4 id='method.hash_slice' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h3><div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "clang";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

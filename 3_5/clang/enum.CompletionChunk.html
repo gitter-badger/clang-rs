@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CompletionChunk` enum in crate `clang`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CompletionChunk">
+
+    <title>clang::CompletionChunk - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>clang</a></p><script>window.sidebarCurrent = {name: 'CompletionChunk', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>clang</a>::<wbr><a class='enum' href=''>CompletionChunk</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-5409' class='srclink' href='../src/clang/lib.rs.html#186-230' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum CompletionChunk&lt;'r&gt; {
+    Optional(<a class='struct' href='../clang/struct.CompletionString.html' title='clang::CompletionString'>CompletionString</a>&lt;'r&gt;),
+    CurrentParameter(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Informative(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Placeholder(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    ResultType(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Text(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    TypedText(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Colon(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Comma(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Equals(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    Semicolon(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    LeftAngleBracket(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    RightAngleBracket(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    LeftBrace(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    RightBrace(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    LeftParenthesis(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    RightParenthesis(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    LeftSquareBracket(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    RightSquareBracket(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    HorizontalSpace(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+    VerticalSpace(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+}</pre><div class='docblock'><p>A piece of a code completion string.</p>
+</div><h2 class='variants'>Variants</h2>
+<table><tr><td id='variant.Optional'><code>Optional</code></td><td><div class='docblock'><p>An optional piece that could be part of the template but is not required.</p>
+</div></td></tr><tr><td id='variant.CurrentParameter'><code>CurrentParameter</code></td><td><div class='docblock'><p>Text that describes the current parameter when code completion was run on a function call,
+message send, or template specialization.</p>
+</div></td></tr><tr><td id='variant.Informative'><code>Informative</code></td><td><div class='docblock'><p>Informative text that should be displayed but not inserted as part of the template.</p>
+</div></td></tr><tr><td id='variant.Placeholder'><code>Placeholder</code></td><td><div class='docblock'><p>Text that should be replaced by the user.</p>
+</div></td></tr><tr><td id='variant.ResultType'><code>ResultType</code></td><td><div class='docblock'><p>Text that specifies the result type of the containing result.</p>
+</div></td></tr><tr><td id='variant.Text'><code>Text</code></td><td><div class='docblock'><p>Text that should be inserted.</p>
+</div></td></tr><tr><td id='variant.TypedText'><code>TypedText</code></td><td><div class='docblock'><p>Text that the user would be expected to type to get the containing code completion result.</p>
+</div></td></tr><tr><td id='variant.Colon'><code>Colon</code></td><td><div class='docblock'><p>A colon (<code>&#39;:&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.Comma'><code>Comma</code></td><td><div class='docblock'><p>A comma (<code>&#39;,&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.Equals'><code>Equals</code></td><td><div class='docblock'><p>An equals sign (<code>&#39;=&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.Semicolon'><code>Semicolon</code></td><td><div class='docblock'><p>A semicolon (<code>&#39;;&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.LeftAngleBracket'><code>LeftAngleBracket</code></td><td><div class='docblock'><p>A left angle bracket (<code>&#39;&lt;&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.RightAngleBracket'><code>RightAngleBracket</code></td><td><div class='docblock'><p>A right angle bracket (<code>&#39;&gt;&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.LeftBrace'><code>LeftBrace</code></td><td><div class='docblock'><p>A left brace (<code>&#39;{&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.RightBrace'><code>RightBrace</code></td><td><div class='docblock'><p>A right brace (<code>&#39;}&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.LeftParenthesis'><code>LeftParenthesis</code></td><td><div class='docblock'><p>A left parentesis (<code>&#39;(&#39;</code>)).</p>
+</div></td></tr><tr><td id='variant.RightParenthesis'><code>RightParenthesis</code></td><td><div class='docblock'><p>A right parenthesis (<code>&#39;)&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.LeftSquareBracket'><code>LeftSquareBracket</code></td><td><div class='docblock'><p>A left square bracket (<code>&#39;[&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.RightSquareBracket'><code>RightSquareBracket</code></td><td><div class='docblock'><p>A right square bracket (<code>&#39;]&#39;</code>).</p>
+</div></td></tr><tr><td id='variant.HorizontalSpace'><code>HorizontalSpace</code></td><td><div class='docblock'><p>Horizontal space (e.g., <code>&#39; &#39;</code>).</p>
+</div></td></tr><tr><td id='variant.VerticalSpace'><code>VerticalSpace</code></td><td><div class='docblock'><p>Vertical space (e.g., <code>&#39;\n&#39;</code>).</p>
+</div></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'r&gt; <a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;</code></h3><div class='impl-items'><h4 id='method.get_text' class='method'><code>fn <a href='#method.get_text' class='fnname'>get_text</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+<div class='docblock'><p>Returns the text associated with this completion chunk.</p>
+
+<h1 id='panics' class='section-header'><a href='#panics'>Panics</a></h1>
+<ul>
+<li>this completion chunk is a <code>CompletionChunk::Optional</code></li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl&lt;'r&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;</code></h3><div class='impl-items'></div><h3 class='impl'><code>impl&lt;'r&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;</code></h3><div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h3 class='impl'><code>impl&lt;'r&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;</code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl&lt;'r&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;</code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../clang/enum.CompletionChunk.html' title='clang::CompletionChunk'>CompletionChunk</a>&lt;'r&gt;</code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "clang";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
