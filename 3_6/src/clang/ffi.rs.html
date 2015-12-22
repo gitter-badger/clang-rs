@@ -1472,10 +1472,14 @@
 <span id="1429">1429</span>
 <span id="1430">1430</span>
 <span id="1431">1431</span>
+<span id="1432">1432</span>
+<span id="1433">1433</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! The raw bindings to `libclang`.</span>
 
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>missing_debug_implementations</span>, <span class='ident'>missing_docs</span>, <span class='ident'>non_upper_case_globals</span>, <span class='ident'>non_snake_case</span>)]</span>
+
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>rustc_1_5</span>, <span class='ident'>allow</span>(<span class='ident'>raw_pointer_derive</span>))]</span>
 
 <span class='kw'>use</span> <span class='ident'>libc</span>::{<span class='ident'>c_char</span>, <span class='ident'>c_int</span>, <span class='ident'>c_longlong</span>, <span class='ident'>c_uint</span>, <span class='ident'>c_ulong</span>, <span class='ident'>c_ulonglong</span>, <span class='ident'>c_void</span>, <span class='ident'>time_t</span>};
 
