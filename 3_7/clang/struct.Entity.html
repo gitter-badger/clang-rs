@@ -46,7 +46,7 @@
             <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                 [<span class='inner'>&#x2212;</span>]
             </a>
-        </span><a id='src-2221' class='srclink' href='../src/clang/lib.rs.html#1753-1756' title='goto source code'>[src]</a></span></h1>
+        </span><a id='src-2334' class='srclink' href='../src/clang/lib.rs.html#1753-1756' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Entity&lt;'tu&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>An AST entity.</p>
@@ -96,6 +96,8 @@ entity.</p>
 <div class='docblock'><p>Returns the linkage of this AST entity, if any.</p>
 </div><h4 id='method.get_location' class='method'><code>fn <a href='#method.get_location' class='fnname'>get_location</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../clang/struct.SourceLocation.html' title='clang::SourceLocation'>SourceLocation</a>&lt;'tu&gt;&gt;</code></h4>
 <div class='docblock'><p>Returns the source location of this AST entity, if any.</p>
+</div><h4 id='method.get_mangled_name' class='method'><code>fn <a href='#method.get_mangled_name' class='fnname'>get_mangled_name</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>Returns the mangled name of this AST entity, if any.</p>
 </div><h4 id='method.get_module' class='method'><code>fn <a href='#method.get_module' class='fnname'>get_module</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../clang/struct.Module.html' title='clang::Module'>Module</a>&lt;'tu&gt;&gt;</code></h4>
 <div class='docblock'><p>Returns the module imported by this module import declaration, if applicable.</p>
 </div><h4 id='method.get_name' class='method'><code>fn <a href='#method.get_name' class='fnname'>get_name</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
@@ -129,9 +131,13 @@ applicable.</p>
 <div class='docblock'><p>Returns the AST entity referred to by this AST entity, if any.</p>
 </div><h4 id='method.get_semantic_parent' class='method'><code>fn <a href='#method.get_semantic_parent' class='fnname'>get_semantic_parent</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../clang/struct.Entity.html' title='clang::Entity'>Entity</a>&lt;'tu&gt;&gt;</code></h4>
 <div class='docblock'><p>Returns the semantic parent of this AST entity, if any.</p>
+</div><h4 id='method.get_storage_class' class='method'><code>fn <a href='#method.get_storage_class' class='fnname'>get_storage_class</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../clang/enum.StorageClass.html' title='clang::StorageClass'>StorageClass</a>&gt;</code></h4>
+<div class='docblock'><p>Returns the storage class of this declaration, if applicable.</p>
 </div><h4 id='method.get_template' class='method'><code>fn <a href='#method.get_template' class='fnname'>get_template</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../clang/struct.Entity.html' title='clang::Entity'>Entity</a>&lt;'tu&gt;&gt;</code></h4>
 <div class='docblock'><p>Returns the template declaration this template specialization was instantiated from, if
 applicable.</p>
+</div><h4 id='method.get_template_arguments' class='method'><code>fn <a href='#method.get_template_arguments' class='fnname'>get_template_arguments</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='enum' href='../clang/enum.TemplateArgument.html' title='clang::TemplateArgument'>TemplateArgument</a>&lt;'tu&gt;&gt;&gt;</code></h4>
+<div class='docblock'><p>Returns the template arguments for this template function specialization, if applicable.</p>
 </div><h4 id='method.get_template_kind' class='method'><code>fn <a href='#method.get_template_kind' class='fnname'>get_template_kind</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='../clang/enum.EntityKind.html' title='clang::EntityKind'>EntityKind</a>&gt;</code></h4>
 <div class='docblock'><p>Returns the categorization of the template specialization that would result from
 instantiating this template declaration, if applicable.</p>
@@ -143,6 +149,8 @@ instantiating this template declaration, if applicable.</p>
 <div class='docblock'><p>Returns the underlying type of this typedef declaration, if applicable.</p>
 </div><h4 id='method.get_usr' class='method'><code>fn <a href='#method.get_usr' class='fnname'>get_usr</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../clang/struct.Usr.html' title='clang::Usr'>Usr</a>&gt;</code></h4>
 <div class='docblock'><p>Returns the USR for this AST entity, if any.</p>
+</div><h4 id='method.is_anonymous' class='method'><code>fn <a href='#method.is_anonymous' class='fnname'>is_anonymous</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Returns whether this AST entity is an anonymous record declaration.</p>
 </div><h4 id='method.is_bit_field' class='method'><code>fn <a href='#method.is_bit_field' class='fnname'>is_bit_field</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
 <div class='docblock'><p>Returns whether this AST entity is a bit field.</p>
 </div><h4 id='method.is_const_method' class='method'><code>fn <a href='#method.is_const_method' class='fnname'>is_const_method</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
